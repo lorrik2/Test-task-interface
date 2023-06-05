@@ -47,27 +47,27 @@ function Sidebar(): JSX.Element {
           <NavLink to="/#" onClick={() => setStateStatClick((prev) => !prev)}>
             Настройки <img src={stateStatClick ? clickOpen : clickClose} alt="open" />
           </NavLink>
-          {stateStatClick ? (
-            <ul>
-              <li>
-                <NavLink to="/#">
-                  Настройки
-                  <br />
-                  профиля
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/#">
-                  Управление
-                  <br />
-                  финансами
-                </NavLink>
-              </li>
-            </ul>
-          ) : (
-            <></>
-          )}
         </li>
+        {!stateStatClick ? (
+          <>
+            <li>
+              <NavLink to="/#">
+                Настройки
+                <br />
+                профиля
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/#">
+                Управление
+                <br />
+                финансами
+              </NavLink>
+            </li>
+          </>
+        ) : (
+          <></>
+        )}
         <li>
           <img src={out} alt="outProfile" />
           <NavLink to="/#">Выход</NavLink>
