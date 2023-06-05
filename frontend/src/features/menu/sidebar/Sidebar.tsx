@@ -11,6 +11,8 @@ import settings from './assets/setings.svg';
 import out from './assets/close.svg';
 import clickClose from './assets/clickClack.svg';
 import clickOpen from './assets/clickOpen.svg';
+import setProfile from './assets/setProfile.svg';
+import finans from './assets/VectorFinans(2).svg';
 
 function Sidebar(): JSX.Element {
   const [stateStatClick, setStateStatClick] = useState(true);
@@ -49,22 +51,28 @@ function Sidebar(): JSX.Element {
           </NavLink>
         </li>
         {!stateStatClick ? (
-          <>
-            <li>
-              <NavLink to="/mock">
-                Настройки
-                <br />
-                профиля
-              </NavLink>
+          <ul id="cont">
+            <li className="str__plus">
+              <div className="cont__dop">
+                <img src={setProfile} alt="settingsProfile" />
+                <NavLink to="/mock">
+                  Настройки
+                  <br />
+                  профиля
+                </NavLink>
+              </div>
             </li>
-            <li>
-              <NavLink to="/mock">
-                Управление
-                <br />
-                финансами
-              </NavLink>
+            <li className="str__plus">
+              <div className="cont__dop">
+                <img src={finans} alt="finans" />
+                <NavLink to="/mock">
+                  Управление
+                  <br />
+                  финансами
+                </NavLink>
+              </div>
             </li>
-          </>
+          </ul>
         ) : (
           <></>
         )}

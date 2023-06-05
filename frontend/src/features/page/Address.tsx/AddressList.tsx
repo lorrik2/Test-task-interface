@@ -43,9 +43,9 @@ function Address({ setSearch }: { setSearch: (val: string) => void }): JSX.Eleme
               }}
             />
 
-            <button type="submit">
+            <button type="submit" id="btn">
               <img src={search} alt="search" />
-              Поиск
+              <p>Поиск</p>
             </button>
           </div>
           {error !== null && <span>{error}</span>}

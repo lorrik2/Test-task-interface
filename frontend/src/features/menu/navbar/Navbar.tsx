@@ -20,7 +20,7 @@ function Navbar(): JSX.Element {
 
   return (
     <header>
-      <div className="flex__container">
+      <div className="flex__container" id="group">
         <img src={logo} alt="logo" />
         <h3 onClick={() => navigate('/')}>Wrench CRM</h3>
       </div>

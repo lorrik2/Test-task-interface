@@ -69,6 +69,13 @@ $textColorInpG: #ffffff;
   }
 
   &__search {
+    & #btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+    }
+
     & input {
       outline: none;
       padding: 24px;
