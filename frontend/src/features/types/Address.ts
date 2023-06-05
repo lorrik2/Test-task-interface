@@ -1,7 +1,3 @@
 export type Address = {
-  suggestions: [
-    {
-      value: string;
-    }
-  ];
+  value: string;
 };

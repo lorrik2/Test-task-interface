@@ -14,7 +14,7 @@ function App(): JSX.Element {
   const dispatch = useAppDispatch();
   useEffect(() => {
     dispatch(getAddressesDate(search));
-  }, []);
+  }, [dispatch, search]);
   return (
     <div className="App">
       <Routes>
