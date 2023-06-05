@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+.mock__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: grey;
+}

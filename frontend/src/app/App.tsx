@@ -7,6 +7,7 @@ import News from '../features/page/News/NewsList';
 import Address from '../features/page/Address.tsx/AddressList';
 import { useAppDispatch } from '../store/store';
 import { getAddressesDate } from '../features/addressSlice';
+import MockCompo from '../features/page/MockCompo';
 
 function App(): JSX.Element {
   const [search, setSearch] = useState('');
@@ -21,6 +22,7 @@ function App(): JSX.Element {
         <Route path="/" element={<Layout />}>
           <Route index element={<News />} />
           <Route path="address" element={<Address setSearch={setSearch} />} />
+          <Route path="mock" element={<MockCompo />} />
         </Route>
       </Routes>
     </div>

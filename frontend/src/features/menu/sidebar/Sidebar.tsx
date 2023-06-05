@@ -28,37 +28,37 @@ function Sidebar(): JSX.Element {
         </li>
         <li>
           <img src={tables} alt="home" />
-          <NavLink to="/#">Таблицы</NavLink>
+          <NavLink to="/mock">Таблицы</NavLink>
         </li>
         <li>
           <img src={calendar} alt="home" />
-          <NavLink to="/#">Календарь</NavLink>
+          <NavLink to="/mock">Календарь</NavLink>
         </li>
         <li>
           <img src={map} alt="home" />
-          <NavLink to="/#">Карты</NavLink>
+          <NavLink to="/mock">Карты</NavLink>
         </li>
         <li>
           <img src={widget} alt="widget" />
-          <NavLink to="/#">Виджеты</NavLink>
+          <NavLink to="/mock">Виджеты</NavLink>
         </li>
         <li>
           <img src={settings} alt="home" />
-          <NavLink to="/#" onClick={() => setStateStatClick((prev) => !prev)}>
+          <NavLink to="/mock" onClick={() => setStateStatClick((prev) => !prev)}>
             Настройки <img src={stateStatClick ? clickOpen : clickClose} alt="open" />
           </NavLink>
         </li>
         {!stateStatClick ? (
           <>
             <li>
-              <NavLink to="/#">
+              <NavLink to="/mock">
                 Настройки
                 <br />
                 профиля
               </NavLink>
             </li>
             <li>
-              <NavLink to="/#">
+              <NavLink to="/mock">
                 Управление
                 <br />
                 финансами
@@ -70,7 +70,7 @@ function Sidebar(): JSX.Element {
         )}
         <li>
           <img src={out} alt="outProfile" />
-          <NavLink to="/#">Выход</NavLink>
+          <NavLink to="/mock">Выход</NavLink>
         </li>
       </ul>
     </nav>
